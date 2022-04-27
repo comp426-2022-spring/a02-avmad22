@@ -14,10 +14,10 @@
  * 
  */
 
-function coinFlip() {
+export function coinFlip() {
  
   let num = Math.round(Math.random())%2;
-  print(num);
+  
   if(num==0) {return "heads"};
   return "tails";
 }
@@ -41,7 +41,7 @@ function coinFlip() {
     ]
  */
 
-function coinFlips(flips) {
+export function coinFlips(flips) {
 
 }
 
@@ -58,7 +58,7 @@ function coinFlips(flips) {
  * @returns {{ heads: number, tails: number }}
  */
 
-function countFlips(array) {
+export function countFlips(array) {
 
 }
 
@@ -73,7 +73,7 @@ function countFlips(array) {
  * returns: { call: 'tails', flip: 'heads', result: 'lose' }
  */
 
-function flipACoin(call) {
+export function flipACoin(call) {
 
 }
 

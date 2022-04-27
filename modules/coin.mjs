@@ -17,7 +17,8 @@
 function coinFlip() {
  
   let num = Math.round(Math.random());
-  if(num==0) {return "heads"};
+  print(num);
+  if(num<0) {return "heads"};
   return "tails";
 }
 

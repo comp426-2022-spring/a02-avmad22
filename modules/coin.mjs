@@ -42,7 +42,11 @@ export function coinFlip() {
  */
 
 export function coinFlips(flips) {
-
+    let arr= Array[flips];
+    arr.forEach(element => {
+      element=coinFlip();
+    });
+    return arr;
 }
 
 /** Count multiple flips

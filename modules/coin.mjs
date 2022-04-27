@@ -42,10 +42,10 @@ export function coinFlip() {
  */
 
 export function coinFlips(flips) {
-    let arr= Array[flips];
-    arr.forEach(element => {
-      element=coinFlip();
-    });
+    let arr= [];
+    for(let i=0; i<flips; i++) {
+      arr[i] = coinFlip();
+    }
     return arr;
 }
 
@@ -63,7 +63,16 @@ export function coinFlips(flips) {
  */
 
 export function countFlips(array) {
-
+  let heads =0;
+  let tails=0;
+  for(let i=0; i < array.length; i++) {
+    if(array[i]=="heads") {
+      heads++;
+    } else {
+      tails++;
+    }
+  }
+  return "{ heads: " + heads + ", tails: " + tails + " }"
 }
 
 /** Flip a coin!
@@ -78,7 +87,12 @@ export function countFlips(array) {
  */
 
 export function flipACoin(call) {
-
+  let side = flipCoin();
+  let result = "";
+  if(side==call) {
+    result = "win";
+  } else {result="lose";}
+  return "{ call: " + call + ", flip: " + side + ", result: " +result + " )";
 }
 
 

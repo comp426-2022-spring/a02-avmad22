@@ -92,7 +92,7 @@ export function flipACoin(call) {
   if(side==call) {
     result = "win";
   } else {result="lose";}
-  return "{ call: " + call + ", flip: " + side + ", results: " +result + " )";
+  return {call: call, flip: flip, result: "win"}
 }
 
 

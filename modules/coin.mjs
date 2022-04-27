@@ -16,9 +16,9 @@
 
 function coinFlip() {
  
-  let num = Math.round(Math.random());
+  let num = Math.round(Math.random())%2;
   print(num);
-  if(num<0) {return "heads"};
+  if(num==0) {return "heads"};
   return "tails";
 }
 

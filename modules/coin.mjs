@@ -15,7 +15,10 @@
  */
 
 function coinFlip() {
-
+ 
+  let num = Math.round(Math.random());
+  if(num==0) {return "heads"};
+  return "tails";
 }
 
 /** Multiple coin flips
